@@ -3,10 +3,12 @@ package dev.pioruocco.service;
 import dev.pioruocco.model.entity.Student;
 import dev.pioruocco.repository.StudentRepository;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
 @Service
+@Transactional
 public class StudentServiceImpl implements StudentService{
 
     private  final StudentRepository studentRepository;
